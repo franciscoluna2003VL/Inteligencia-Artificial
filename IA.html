@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información completa sobre Inteligencia Artificial">
+    <title>Inteligencia Artificial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #222831;
+        }
+
+        header {
+            background: #00adb5;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h1, h2 {
+            color: #222831;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background: #eeeeee;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222831;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        a {
+            color: #00adb5;
+        }
+
+        a:hover {
+            color: #009b9b;
+        }
+
+        /* Botones */
+        button {
+            background-color: #00adb5;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #009b9b;
+        }
+
+        /* Línea del tiempo estilo scroll */
+        .timeline {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow-y: auto;
+            height: 600px;
+            padding: 10px 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #00adb5;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-content {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .container.left {
+            left: 0;
+        }
+
+        .container.right {
+            left: 50%;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: #00adb5;
+            border: 4px solid #ffffff;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .container.right::after {
+            left: -16px;
+        }
+
+        .container.left::after {
+            right: -16px;
+        }
+
+        .container.right {
+            left: 50%;
+        }
+
+        .container.left .timeline-content {
+            left: 0;
+        }
+
+        .container.right .timeline-content {
+            left: -100%;
+        }
+
+        /* Agregar más espacio para visualización mejorada */
+        .timeline-content {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#que-es-ia">¿Qué es IA?</a></li>
+                <li><a href="#aplicaciones">Aplicaciones</a></li>
+                <li><a href="#tipos">Tipos de IA</a></li>
+                <li><a href="#futuro">El Futuro</a></li>
+                <li><a href="#timeline">Línea del Tiempo</a></li>
+            </ul>
+        </nav>
+        <h1>Inteligencia Artificial</h1>
+    </header>
+
+    <main>
+        <section id="que-es-ia">
+            <h2>¿Qué es la Inteligencia Artificial?</h2><br>
+            <img src="imagenes/int.jpg" alt="Imagen de Inteligencia Artificial" style="width: 20%; height:auto; border-radius:8px; ">
+          <br><br>  <p>La inteligencia artificial (IA) es una disciplina de la informática que tiene como objetivo crear sistemas capaces de realizar tareas que normalmente requieren la inteligencia humana. Estas tareas pueden incluir el aprendizaje, el razonamiento, la resolución de problemas, la comprensión del lenguaje natural, la percepción visual y auditiva, y la toma de decisiones. La IA busca simular procesos cognitivos humanos, de modo que las máquinas puedan "pensar" de manera similar a los humanos en algunos aspectos.
+
+           <br><br> Componentes Fundamentales de la IA
+           <br><br> Para entender ampliamente la IA, es necesario desglosar sus componentes clave:
+            
+           <br><br>Aprendizaje: Las máquinas utilizan datos para "aprender". Dependiendo de cómo se les presenta la información, la IA puede aprender de manera supervisada (donde se les proporciona ejemplos con respuestas correctas) o no supervisada (donde el sistema encuentra patrones por sí mismo). El aprendizaje por refuerzo es otro enfoque en el que la IA aprende mediante ensayo y error, optimizando sus acciones con base en recompensas o penalizaciones.
+            
+            <br><br>Razonamiento y Resolución de Problemas: Los sistemas de IA están diseñados para realizar deducciones, crear planes y resolver problemas. Esto se realiza mediante algoritmos lógicos que permiten a la IA analizar un problema, tomar decisiones y, en algunos casos, encontrar soluciones más eficientes que las propuestas por los humanos.
+            
+           <br><br> Percepción: Las IA modernas pueden percibir su entorno utilizando sensores y técnicas como la visión por computadora y el procesamiento de lenguaje natural. Estas tecnologías les permiten reconocer objetos, caras, sonidos o comprender el lenguaje hablado y escrito.</p>
+        </section>
+
+        <section id="aplicaciones">
+            <h2>Aplicaciones de la IA</h2><br>
+            <img src="imagenes/IA.webp" alt="Aplicaciones de la IA" style="width:20%; height:auto; border-radius:8px;">
+         <br><br>   <p>La inteligencia artificial (IA) tiene aplicaciones en una amplia gama de industrias y sectores debido a su capacidad para automatizar tareas, analizar grandes cantidades de datos y aprender de la experiencia. Algunas de las aplicaciones más importantes incluyen:
+
+           <br><br> 1. Salud y Medicina
+            Diagnóstico: IA puede analizar imágenes médicas (radiografías, resonancias) y detectar enfermedades como el cáncer o anomalías en estudios médicos más rápido y con gran precisión.
+            Asistentes virtuales médicos: Aplicaciones de IA como chatbots pueden ayudar a pacientes a monitorear síntomas, proporcionar recordatorios de medicación y responder preguntas básicas sobre su salud.
+            Desarrollo de medicamentos: Los algoritmos de IA ayudan a identificar nuevas moléculas y acelerar el desarrollo de fármacos, optimizando pruebas y predicciones.
+            Cirugía robótica: Robots controlados por IA pueden realizar cirugías mínimamente invasivas con gran precisión.
+          <br><br>  2. Finanzas
+            Análisis predictivo: IA se utiliza para predecir tendencias del mercado y ayudar en la toma de decisiones de inversión.
+            Detección de fraudes: Los sistemas de IA monitorean transacciones financieras en busca de patrones sospechosos que podrían indicar fraude.
+            Automatización de procesos: Tareas administrativas y operativas en bancos y aseguradoras son automatizadas por IA para mejorar la eficiencia.
+        <br> <br>   3. Comercio Electrónico y Marketing
+            Recomendaciones personalizadas: Plataformas como Amazon, Netflix y Spotify utilizan IA para sugerir productos, series o música según las preferencias del usuario.
+            Publicidad dirigida: Los sistemas de IA analizan datos de usuarios para mostrar anuncios personalizados y mejorar la conversión en ventas.
+            Atención al cliente: Chatbots y asistentes virtuales basados en IA brindan soporte inmediato a los clientes en plataformas de comercio electrónico.
+        <br>  <br>  4. Transporte
+            Conducción autónoma: Los coches autónomos, como los desarrollados por Tesla, utilizan IA para reconocer el entorno, tomar decisiones de conducción y evitar accidentes.
+            Optimización de rutas: IA ayuda a las empresas de logística y transporte a planificar rutas más eficientes, ahorrando tiempo y combustible.
+            Control de tráfico: En algunas ciudades, la IA se utiliza para gestionar el tráfico en tiempo real y optimizar los semáforos para reducir la congestión.
+          <br><br>  5. Educación
+            Tutores virtuales: IA proporciona asistencia personalizada a los estudiantes, ajustando el ritmo de aprendizaje y ofreciendo material adicional según el progreso del alumno.
+            Evaluación automática: Herramientas de IA pueden corregir exámenes, trabajos y proporcionar retroalimentación personalizada.
+            Análisis del desempeño: IA puede analizar el progreso de los estudiantes para identificar debilidades y ayudar a los profesores a personalizar la enseñanza.
+            </p>
+        </section>
+
+        <section id="tipos">
+            <h2>Tipos de IA</h2><br>
+            <img src="imagenes/IA3.webp" alt="Tipos de IA" style="width:20%; height:auto; border-radius:8px;">
+          <br><br>  <p>Existen varios tipos de IA, entre los más comunes están:
+
+             <br> <br> IA débil o limitada: Esta es la IA diseñada para realizar tareas específicas, como los asistentes virtuales (Siri, Alexa), los algoritmos de recomendación (Netflix, YouTube) o los sistemas de conducción autónoma. Estas IAs no tienen una verdadera comprensión o conciencia, solo siguen reglas preprogramadas o modelos entrenados en datos.
+                
+              <br> <br> IA fuerte o general: Se refiere a una inteligencia similar a la humana, que tiene la capacidad de realizar cualquier tarea cognitiva que una persona pueda hacer, con un nivel de entendimiento profundo y generalización. Actualmente no existe este tipo de IA.
+                
+              <br> <br> Aprendizaje automático (Machine Learning): Un subcampo de la IA que permite a las máquinas aprender de datos y mejorar su rendimiento en tareas específicas sin ser explícitamente programadas para ello.
+                
+               <br><br> Redes neuronales artificiales y aprendizaje profundo (Deep Learning): Son modelos que imitan la forma en que el cerebro humano procesa la información. Estos sistemas son capaces de manejar grandes cantidades de datos y aprender patrones complejos.</p>
+        </section>
+
+        <section id="futuro">
+            <h2>El Futuro de la IA</h2><br>
+            <img src="imagenes/IA2.webp" alt="El futuro de la Inteligencia Artificial" style="width:20%; height:auto; border-radius:8px;">
+          <br><br>  <p>El futuro de la inteligencia artificial (IA) es prometedor y tiene el potencial de transformar prácticamente todos los aspectos de la vida moderna. Algunas de las tendencias y desarrollos clave que probablemente definan el futuro de la IA incluyen:
+
+          <br><br>  1. IA General (AGI)
+            Progreso hacia la IA general: Aunque la IA actual es especializada en tareas específicas (IA débil), el objetivo a largo plazo es desarrollar una IA general (AGI, por sus siglas en inglés), que sea capaz de aprender y realizar cualquier tarea cognitiva que los humanos puedan hacer. La AGI podría revolucionar industrias enteras, pero también plantea enormes desafíos éticos y de control.
+            Implicaciones filosóficas y éticas: Una AGI con capacidades superiores a las humanas plantea preguntas sobre su control, los derechos de estas máquinas y las implicaciones para la sociedad. Esto ha llevado a debates sobre la necesidad de regulaciones y salvaguardias.
+           <br><br> 2. Automatización Masiva
+            Transformación del trabajo: A medida que la IA y la automatización continúen avanzando, se espera que más trabajos rutinarios o repetitivos sean automatizados. Esto afectará tanto a los sectores industriales como a los de servicios, generando la necesidad de reentrenar a la fuerza laboral para nuevas habilidades.
+            Nuevas oportunidades laborales: Si bien la automatización eliminará algunos empleos, también creará nuevas oportunidades en campos relacionados con la IA, como el desarrollo de software, análisis de datos, robótica y mantenimiento de sistemas automatizados.
+           <br><br> 3. IA Explicativa y Transparente
+            Mayor comprensión de los modelos de IA: Uno de los retos actuales es que muchos modelos de IA, especialmente los de aprendizaje profundo, son cajas negras, lo que significa que sus procesos de toma de decisiones no son fácilmente comprensibles. En el futuro, habrá un mayor enfoque en la IA explicativa, que permitirá a los humanos entender cómo las IA llegan a sus conclusiones.
+            Regulaciones más estrictas: A medida que la IA se integre más en sectores como la salud, las finanzas y la justicia, se exigirá una mayor transparencia y rendición de cuentas en los sistemas de IA.</p>
+        </section>
+
+        <!-- Sección Línea del Tiempo estilo scroll -->
+        <section id="timeline">
+            <h2>Línea del Tiempo de la Inteligencia Artificial</h2>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="timeline-content">
+                        <h3>1950</h3>
+                        <p>Alan Turing publica el artículo "Computing Machinery and Intelligence", donde introduce el famoso "Test de Turing" para determinar la inteligencia de una máquina.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="timeline-content">
+                        <h3>1956</h3>
+                        <p>John McCarthy acuña el término "Inteligencia Artificial" durante la Conferencia de Dartmouth, marcando el inicio formal de este campo de estudio.</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="timeline-content">
+                        <h3>1966</h3>
+                        <p>Joseph Weizenbaum crea ELIZA, uno de los primeros programas de procesamiento de lenguaje natural que simulaba una conversación humana.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="timeline-content">
+                        <h3>1979</h3>
+                        <p>Se desarrolla el Stanford Cart, uno de los primeros vehículos autónomos capaces de navegar por una habitación llena de obstáculos sin intervención humana.</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="timeline-content">
+                        <h3>1997</h3>
+                        <p>Deep Blue de IBM vence al campeón mundial de ajedrez Garry Kasparov, marcando un hito importante en la IA.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="timeline-content">
+                        <h3>2011</h3>
+                        <p>IBM Watson gana el concurso de trivia "Jeopardy!" contra los mejores campeones humanos, demostrando las capacidades de la IA en el procesamiento del lenguaje natural.</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="timeline-content">
+                        <h3>2016</h3>
+                        <p>AlphaGo de Google DeepMind derrota a Lee Sedol, campeón mundial del juego de Go, un juego más complejo que el ajedrez.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="timeline-content">
+                        <h3>2020</h3>
+                        <p>OpenAI lanza GPT-3, un modelo de lenguaje que puede generar texto indistinguible del escrito por humanos.</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="timeline-content">
+                        <h3>2023</h3>
+                        <p>GPT-4, un avance en modelos de lenguaje de IA, transforma la automatización y asistencia en múltiples industrias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Todo sobre IA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Navegación suave
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const sectionId = e.target.getAttribute('href').substring(1);
+                    document.getElementById(sectionId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
